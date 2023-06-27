@@ -1,7 +1,7 @@
 
 .blogs
-    background: $gray-01    
-    
+    background: $gray-01
+
 .media-blog
     margin-bottom: 30px
     align-items: flex-start
@@ -24,7 +24,7 @@
 
     i
         color: $accent
-        margin-right: 0.5rem
+        margin-right: 0.25rem
 
 .media-blog
     .flex-shrink-0
@@ -47,16 +47,49 @@
     &:hover img
         transform: scale(1.1)
 
-
 @media screen and (max-width: 1200px)
     .media-blog .flex-shrink-0
         height: 230px
 
-
 @media screen and (max-width: 767px)
-    .blogs 
-        margin-top: 60px !important 
+    .blogs
+        margin-top: 60px !important
 
         .flex-shrink-0
             margin-bottom: 1rem
 
+/*overlay*/
+.overlay
+    overflow: hidden
+    position: relative
+
+    img
+        width: 100%
+        object-fit: cover
+
+.overlay-caption
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+
+    background: rgb(24,194,245)
+    background: linear-gradient(0deg, rgba(24,194,245,1) 0%, rgba(13,105,132,0) 50%, rgba(0,0,0,0) 100%)
+    color: #fff
+    padding: 60px 15px
+    height: 100%
+
+.overlay-caption-title
+    position: absolute
+    bottom: 0
+    padding: 15px
+    font-size: 2rem
+    line-height: 52px
+    color: #fff
+
+/*overlay end*/
+
+
+.hover:hover
+    img
+        tra

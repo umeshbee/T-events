@@ -1,447 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/all.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="dist/css/all.css" />
-  <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="dist/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="dist/css/ninja-slider.css" />
+    <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/animate.css" />
 
-  <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="dist/css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="dist/css/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="dist/css/ninja-slider.css" />
-  <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="dist/css/animate.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="dist/images/favicon-16x16.png"
+    />
+    <title>T-Events</title>
+  </head>
 
-  <link rel="stylesheet" href="dist/css/style.css" />
-  <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon-16x16.png" />
-  <title>T-Events</title>
-</head>
+  <body>
+    <div id="scrollTop"><i class="fas fa-chevron-up"></i></div>
+    <div class="bsnav-mobile-overlay"></div>
 
-<body>
-  <div id="scrollTop"><i class="fas fa-chevron-up"></i></div>
-  <div class="bsnav-mobile-overlay"></div>
+    <header class="header">
+      <div class="header__middle">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-3 col-lg-2 col-7">
+              <a href="index.html" class="logo">
+                <img src="dist/images/logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="col-md-9 col-lg-10 col-5">
+              <div
+                class="header__middle-right d-flex justify-content-end align-items-center"
+              >
+                <nav class="menu desktop-menu">
+                  <nav
+                    class="navbar navbar-expand-lg navbar-dark bg-dark navdiv"
+                  >
+                    <ul class="navbar-nav nav-list">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                          Home
+                          <span class="sr-only">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About us</a>
+                      </li>
 
-  <header class="header">
-    <div class="header__middle">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-3 col-lg-2 col-7">
-            <a href="index.html" class="logo">
-              <img src="dist/images/logo.svg" alt="" />
-            </a>
-          </div>
-          <div class="col-md-9 col-lg-10 col-5">
-            <div class="header__middle-right d-flex justify-content-end align-items-center">
-              <nav class="menu desktop-menu">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark navdiv">
-                  <ul class="navbar-nav nav-list">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">
-                        Home
-                        <span class="sr-only">(current)</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about-us.html">About us</a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="categories.html">
-                        News
-
-                      </a>
-
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html">Events</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="destination-single.html">
-                        Gallery
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="faq.html">Blogs</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact-us.html">Contact Us</a>
-                    </li>
-                  </ul>
+                      <li class="nav-item">
+                        <a class="nav-link" href="categories.html">
+                          News
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Events</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="destination-single.html">
+                          Gallery
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="faq.html">Blogs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">
+                          Contact Us
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </nav>
-              </nav>
 
-              <button class="navbar-toggler toggler-spring">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <button class="navbar-toggler toggler-spring">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <nav class="menu mobile-menu">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navdiv">
-        <ul class="navbar-nav nav-list">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-              Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-us.html">About us</a>
-          </li>
+      <nav class="menu mobile-menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navdiv">
+          <ul class="navbar-nav nav-list">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">
+                Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About us</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="categories.html">
-              News
-
-            </a>
-
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="destination-single.html">
-              Gallery
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="faq.html">Blogs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact-us.html">Contact Us</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="categories.html">
+                News
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destination-single.html">
+                Gallery
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
       </nav>
-    </nav>
-  </header>
-  <main class="body-wrapper">
-
-    <section class="hero-section hero hero-bg">
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-border-top"></div>
-          <div class="hero-content-inside">
-
-            <div class="hero-sub-title">
-              Corporate
+    </header>
+    <main class="body-wrapper">
+      <section class="hero-section hero hero-bg">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-border-top"></div>
+            <div class="hero-content-inside">
+              <div class="hero-sub-title">
+                Corporate
+              </div>
+              <h1 class="hero-title">
+                Events
+              </h1>
+              <div class="hero-btn">We Value Your Time</div>
+              <div class="hero-arrow orange-gradiant mt-5">
+                <i class="fa-solid fa-arrow-down"></i>
+              </div>
             </div>
-            <h1 class="hero-title">
-              Events
-            </h1>
-            <div class="hero-btn">We Value Your Time</div>
-            <div class="hero-arrow orange-gradiant mt-5">
-              <i class="fa-solid fa-arrow-down"></i>
-            </div>
-          </div>
-          <div class="hero-border-bottom"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section">
-      <div class="row g-0">
-        <div class="col-md-6">
-          <img src="dist/images/about-info-img.jpg" alt="" class="w-100">
-        </div>
-        <div class="col-md-6">
-          <div class="about-info">
-            <h3 class="about-info-sub-title m-b-10">We aims to provide excellent service</h3>
-            <h2 class="about-info-title m-b-40">With the help of its expertise team in different fields.</h2>
-            <div class="about-info-text">
-              T Events teams with its strong expertise and experience prioritizes the customer needs and works alongside
-              the client in every step till completion to make the event successful. For any corporate needs, our team
-              carefully crafts the idea and plans for the clients to provide a unique and beneficial experience.
-            </div>
-            <a href="" class="about-info-link d-inline-flex align-items-center mt-3">
-              Our Company History <i class="fa-solid fa-arrow-right-long ms-1"></i>
-            </a>
-
+            <div class="hero-border-bottom"></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="our-events-section events p-tb-60">
-      <div class="container">
-        <div class="section-title text-center m-b-50">
-          <h2 class="text-white fs-40">Our Events</h2>
-        </div>
-        <div class="section-sub-title w-75  mx-auto text-center">
-          We treat each and every project with the same level of focus to details and attention, disregarding the size
-          or scale of the event. T Events is proud to be a full service professional corporate planner and for
-          connecting with many corporate clients.
-        </div>
-        <hr class="horizontal-line m-t-40">
-        <div class="events-grid grid grid--3 m-t-40">
-          <div class="grid-item">
-            <div class="event-card">
-              <figure class="event-card-img mb-0">
-                <img src="dist/images/event-img-1.jpg" alt="">
-              </figure>
-              <div class="event-card-body p-3 text-center ">
-                <h4 class="mb-0 text-white">Corporate Events</h4>
-              </div>
-            </div>
+      <section class="about-section">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="dist/images/about-info-img.jpg" alt="" class="w-100" />
           </div>
-          <div class="grid-item">
-            <div class="event-card">
-              <figure class="event-card-img mb-0">
-                <img src="dist/images/event-img-2.jpg" alt="">
-              </figure>
-              <div class="event-card-body p-3 text-center ">
-                <h4 class="mb-0 text-white">Wedding Events</h4>
+          <div class="col-md-6">
+            <div class="about-info">
+              <h3 class="about-info-sub-title m-b-10">
+                We aims to provide excellent service
+              </h3>
+              <h2 class="about-info-title m-b-40">
+                With the help of its expertise team in different fields.
+              </h2>
+              <div class="about-info-text">
+                T Events teams with its strong expertise and experience
+                prioritizes the customer needs and works alongside the client in
+                every step till completion to make the event successful. For any
+                corporate needs, our team carefully crafts the idea and plans
+                for the clients to provide a unique and beneficial experience.
               </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="event-card">
-              <figure class="event-card-img mb-0">
-                <img src="dist/images/event-img-3.jpg" alt="">
-              </figure>
-              <div class="event-card-body p-3 text-center ">
-                <h4 class="mb-0 text-white">Live Entertaniment</h4>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="event-card">
-              <figure class="event-card-img mb-0">
-                <img src="dist/images/event-img-4.jpg" alt="">
-              </figure>
-              <div class="event-card-body p-3 text-center ">
-                <h4 class="mb-0 text-white">Talent and Stage show</h4>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="event-card">
-              <figure class="event-card-img mb-0">
-                <img src="dist/images/event-img-5.jpg" alt="">
-              </figure>
-              <div class="event-card-body p-3 text-center ">
-                <h4 class="mb-0 text-white">Product Lunch</h4>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <div class="event-card">
-              <figure class="event-card-img mb-0">
-                <img src="dist/images/event-img-6.jpg" alt="">
-              </figure>
-              <div class="event-card-body p-3 text-center ">
-                <h4 class="mb-0 text-white">Private Events</h4>
-              </div>
+              <a
+                href=""
+                class="about-info-link d-inline-flex align-items-center mt-3"
+              >
+                Our Company History
+                <i class="fa-solid fa-arrow-right-long ms-1"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div class="btn-wrap m-t-40 text-center">
-          <a href="" class="btn btn-orange-gradiant-outline btn--big">View More Events</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-
-    <section class="blogs-section blogs p-tb-60">
-      <div class="container">
-        <div class="section-title text-center m-b-50">
-          <h2 class="text-white">Our Blog</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="dist/images/blog1.jpg" alt="">
+      <section class="our-events-section events p-tb-60">
+        <div class="container">
+          <div class="section-title text-center m-b-50">
+            <h2 class="text-white fs-40">Our Events</h2>
           </div>
-          <div class="col-lg-6 ">
-            <a href="">
-              <div class="d-flex media-blog">
-                <div class="flex-shrink-0">
-                  <img src="dist/images/blog2.jpg" alt="" />
-                </div>
-                <div class="flex-grow-1 media-blog-content ms-3">
-                  <h3>Camping On An Erupting Volcano In Guatemala</h3>
-                  <p>
-                    <i class="fa-solid fa-clock"></i>
-                    August 7, 2021
-                  </p>
-                </div>
+          <div class="section-sub-title w-75 mx-auto text-center">
+            We treat each and every project with the same level of focus to
+            details and attention, disregarding the size or scale of the event.
+            T Events is proud to be a full service professional corporate
+            planner and for connecting with many corporate clients.
+          </div>
+          <hr class="horizontal-line m-t-40" />
+          <div class="events-grid grid grid--3 m-t-40">
+            <div class="grid-item">
+              <div class="event-card">
+                <a href="" class="hover">
+                  <figure class="event-card-img mb-0">
+                    <img src="dist/images/event-img-1.jpg" alt="" />
+                  </figure>
+                  <div class="event-card-body p-3 text-center">
+                    <h4 class="mb-0 text-white">Corporate Events</h4>
+                  </div>
+                </a>
               </div>
-            </a>
-            <a href="">
-              <div class="d-flex media-blog">
-                <div class="flex-shrink-0">
-                  <img src="dist/images/blog3.jpg" alt="" />
-                </div>
-                <div class="flex-grow-1 media-blog-content ms-3">
-                  <h3>Camping On An Erupting Volcano In Guatemala</h3>
-                  <p>
-                    <i class="fa-solid fa-clock"></i>
-                    August 7, 2021
-                  </p>
-                </div>
+            </div>
+            <div class="grid-item">
+              <div class="event-card">
+                <a href="" class="hover">
+                  <figure class="event-card-img mb-0">
+                    <img src="dist/images/event-img-2.jpg" alt="" />
+                  </figure>
+                  <div class="event-card-body p-3 text-center">
+                    <h4 class="mb-0 text-white">Wedding Events</h4>
+                  </div>
+                </a>
               </div>
-            </a>
-            <a href="">
-              <div class="d-flex media-blog">
-                <div class="flex-shrink-0">
-                  <img src="dist/images/blog4.jpg" alt="" />
-                </div>
-                <div class="flex-grow-1 media-blog-content ms-3">
-                  <h3>Camping On An Erupting Volcano In Guatemala</h3>
-                  <p>
-                    <i class="fa-solid fa-clock"></i>
-                    August 7, 2021
-                  </p>
-                </div>
+            </div>
+            <div class="grid-item">
+              <div class="event-card">
+                <a href="" class="hover">
+                  <figure class="event-card-img mb-0">
+                    <img src="dist/images/event-img-3.jpg" alt="" />
+                  </figure>
+                  <div class="event-card-body p-3 text-center">
+                    <h4 class="mb-0 text-white">Live Entertaniment</h4>
+                  </div>
+                </a>
               </div>
+            </div>
+            <div class="grid-item">
+              <div class="event-card">
+                <a href="" class="hover">
+                  <figure class="event-card-img mb-0">
+                    <img src="dist/images/event-img-4.jpg" alt="" />
+                  </figure>
+                  <div class="event-card-body p-3 text-center">
+                    <h4 class="mb-0 text-white">Talent and Stage show</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="event-card">
+                <a href="" class="hover">
+                  <figure class="event-card-img mb-0">
+                    <img src="dist/images/event-img-5.jpg" alt="" />
+                  </figure>
+                  <div class="event-card-body p-3 text-center">
+                    <h4 class="mb-0 text-white">Product Lunch</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="event-card">
+                <a href="" class="hover">
+                  <figure class="event-card-img mb-0">
+                    <img src="dist/images/event-img-6.jpg" alt="" />
+                  </figure>
+                  <div class="event-card-body p-3 text-center">
+                    <h4 class="mb-0 text-white">Private Events</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="btn-wrap m-t-40 text-center">
+            <a href="" class="btn btn-orange-gradiant-outline btn--big">
+              View More Events
             </a>
           </div>
+        </div>
+      </section>
 
-        </div>
-      </div>
-    </section>
+      <section class="blogs-section blogs p-tb-60">
+        <div class="container">
+          <div class="section-title text-center m-b-50">
+            <h2 class="text-white">Our Blog</h2>
+          </div>
 
-    <section class="gallery-section">
-      <div class="grid grid--5 no-gap">
-        <div class="grid-item">
-          <img src="dist/images/gallery-1.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="dist/images/gallery-2.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="dist/images/gallery-3.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="dist/images/gallery-4.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="dist/images/gallery-5.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="dist/images/gallery-6.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="dist/images/gallery-7.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="dist/images/gallery-8.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="dist/images/gallery-9.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="dist/images/gallery-10.jpg" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section class="cta orange-gradiant p-tb-50">
-      <div class="container">
-        <div class="d-flex cta-content justify-content-between align-items-center">
-          <div class="cta-left text-white">
-            Remember, your satisfaction is our top priority, and we're committed to delivering exceptional service every
-            step of the way. We look forward to speaking with you soon.
-          </div>
-          <div class="cta-right">
-            <a href="" class="btn btn--white-outline btn--big">Call Us Now</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-sm-6">
-          <div class="footer__box">
-            <h2>About us</h2>
-            <div class="footer__box-text">
-              T Events teams with its strong expertise and experience prioritizes the customer needs and works alongside the client in every step till completion to make the event successful. For any corporate needs.
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="footer__box footer__box-menu">
-            <h2>Links</h2>
-            <ul>
-              <li><a href="">About Us</a></li>
-              <li><a href="">News</a></li>
-              <li><a href="">Events</a></li>
-              <li><a href="">Gallery</a></li>
-              <li><a href="">Blogs</a></li>
-              <li><a href="">Contact us</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-5  col-sm-6">
-          <h2>Contact us</h2>
           <div class="row">
             <div class="col-lg-6">
-              <div class="footer__box">
-                <div class="footer-contact-info">
-                  <h4>Nepal Office </h4>
-                  <ul class="contact-list">
-                    <li>Kamaladi Chowk, 
-                      Kathmandu Nepal</li>
-                    <li><a href="tel:01-5907655"> 01-5907655</a></li>
-                    <li><a href="mailto:info@event-us.com">info@event-us.com</a></li>
-                  </ul>
-                </div>
-              </div>
+              <a href="">
+                <figure class="overlay hover">
+                  <img src="dist/images/blog1.jpg" alt="" />
+                  <figcaption class="overlay-caption">
+                    <h2 class="overlay-caption-title">
+                      Inspiring Innovation and Entrepreneurship
+                    </h2>
+                  </figcaption>
+                </figure>
+              </a>
             </div>
-            <div class="col-lg-6  col-sm-6">
-              <div class="footer__box">
-                <div class="footer-contact-info">
-                  <h4>Australia Office  </h4>
-                  <ul class="contact-list">
-                    <li>Adelate St, Brisbane 
-                      Qld 4000</li>
-                    <li><a href="tel:01-5907655">01-5907655</a></li>
-                  </ul>
+            <div class="col-lg-6">
+              <a href="">
+                <div class="d-flex media-blog">
+                  <div class="flex-shrink-0">
+                    <img src="dist/images/blog2.jpg" alt="" />
+                  </div>
+                  <div class="flex-grow-1 media-blog-content ms-3">
+                    <h3>Camping On An Erupting Volcano In Guatemala</h3>
+                    <p>
+                      <i class="fa-solid fa-clock"></i>
+                      August 7, 2021
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
+              <a href="">
+                <div class="d-flex media-blog">
+                  <div class="flex-shrink-0">
+                    <img src="dist/images/blog3.jpg" alt="" />
+                  </div>
+                  <div class="flex-grow-1 media-blog-content ms-3">
+                    <h3>Camping On An Erupting Volcano In Guatemala</h3>
+                    <p>
+                      <i class="fa-solid fa-clock"></i>
+                      August 7, 2021
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="">
+                <div class="d-flex media-blog">
+                  <div class="flex-shrink-0">
+                    <img src="dist/images/blog4.jpg" alt="" />
+                  </div>
+                  <div class="flex-grow-1 media-blog-content ms-3">
+                    <h3>Camping On An Erupting Volcano In Guatemala</h3>
+                    <p>
+                      <i class="fa-solid fa-clock"></i>
+                      August 7, 2021
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
- 
         </div>
+      </section>
 
-       
-      </div>
+      <section class="gallery-section">
+        <div class="grid grid--5 no-gap">
+          <div class="grid-item">
+            <a href="dist/images/gallery-1.jpg" data-fancybox="gallery">
+              <img src="dist/images/gallery-1.jpg" alt="" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="dist/images/gallery-2.jpg" data-fancybox="gallery">
+              <img src="dist/images/gallery-2.jpg" alt="" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="dist/images/gallery-3.jpg" data-fancybox="gallery">
+              <img src="dist/images/gallery-3.jpg" alt="" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="dist/images/gallery-4.jpg" data-fancybox="gallery">
+              <img src="dist/images/gallery-4.jpg" alt="" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="dist/images/gallery-5.jpg" data-fancybox="gallery">
+              <img src="dist/images/gallery-5.jpg" alt="" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="dist/images/gallery-6.jpg" data-fancybox="gallery">
+              <img src="dist/images/gallery-6.jpg" alt="" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="dist/images/gallery-7.jpg" data-fancybox="gallery">
+              <img src="dist/images/gallery-7.jpg" alt="" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="dist/images/gallery-8.jpg" data-fancybox="gallery">
+              <img src="dist/images/gallery-8.jpg" alt="" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="dist/images/gallery-9.jpg" data-fancybox="gallery">
+              <img src="dist/images/gallery-9.jpg" alt="" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="dist/images/gallery-10.jpg" data-fancybox="gallery">
+              <img src="dist/images/gallery-10.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
 
-    </div>
-    <div class="last_footer">
+      <section class="cta orange-gradiant p-t-50 p-b-80">
+        <div class="container">
+          <div
+            class="d-flex cta-content justify-content-between align-items-center"
+          >
+            <div class="cta-left text-white">
+              Remember, your satisfaction is our top priority, and we're
+              committed to delivering exceptional service every step of the way.
+              We look forward to speaking with you soon.
+            </div>
+            <div class="cta-right">
+              <a href="" class="btn btn--white-outline btn--big">Call Us Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="container">
-        <div class="d-flex justify-content-between flex-wrap">
-          <div class="copy">
-            &copy 2023, All rights reserved.Designed & Developed By <a href="https://www.pioneersoftech.com">Pioneer Software Technology Pvt.Ltd.</a> 
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="footer__box">
+              <h2>About us</h2>
+              <div class="footer__box-text">
+                T Events teams with its strong expertise and experience
+                prioritizes the customer needs and works alongside the client in
+                every step till completion to make the event successful. For any
+                corporate needs.
+              </div>
+            </div>
           </div>
-          <div class="social-media footer__social-media">
-            <a href=""><i class="fab fa-facebook-f"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
-        </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer__box footer__box-menu">
+              <h2>Links</h2>
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-5 col-sm-6">
+            <h2>Contact us</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="footer__box">
+                  <div class="footer-contact-info">
+                    <h4>Nepal Office</h4>
+                    <ul class="contact-list">
+                      <li>Kamaladi Chowk, Kathmandu Nepal</li>
+                      <li><a href="tel:01-5907655">01-5907655</a></li>
+                      <li>
+                        <a href="mailto:info@event-us.com">info@event-us.com</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <div class="footer__box">
+                  <div class="footer-contact-info">
+                    <h4>Australia Office</h4>
+                    <ul class="contact-list">
+                      <li>Adelate St, Brisbane Qld 4000</li>
+                      <li><a href="tel:01-5907655">01-5907655</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script src="dist/js/jquery-3.5.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="dist/js/bootstrap.min.js"></script>
-  <script src="dist/js/owl.carousel.js"></script>
+      <div class="last_footer">
+        <div class="container">
+          <div class="d-flex justify-content-between flex-wrap">
+            <div class="copy">
+              &copy 2023, All rights reserved.Designed & Developed By
+              <a href="https://www.pioneersoftech.com">
+                Pioneer Software Technology Pvt.Ltd.
+              </a>
+            </div>
+            <div class="social-media footer__social-media">
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="dist/js/jquery-3.5.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/owl.carousel.js"></script>
 
-  <script src="dist/js/jquery.fancybox.min.js"></script>
-  <script src="dist/js/wow.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
-  <script src="dist/js/form-validation.js"></script>
-  <script src="dist/js/captcha.js"></script>
-  <script src="dist/js/main.js"></script>
-</body>
-
+    <script src="dist/js/jquery.fancybox.min.js"></script>
+    <script src="dist/js/wow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="dist/js/form-validation.js"></script>
+    <script src="dist/js/captcha.js"></script>
+    <script src="dist/js/main.js"></script>
+  </body>
 </html>
