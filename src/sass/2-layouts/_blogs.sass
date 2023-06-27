@@ -1,0 +1,62 @@
+
+.blogs
+    background: $gray-01    
+    
+.media-blog
+    margin-bottom: 30px
+    align-items: flex-start
+
+.media-blog-content
+    padding-bottom: 0
+
+    h3
+        font-size: 20px
+        margin-bottom: 20px
+        font-weight: 500
+        color: #fff
+
+        &:hover
+            text-decoration: underline
+            color: #fff
+
+    p
+        color: $body-text-1
+
+    i
+        color: $accent
+        margin-right: 0.5rem
+
+.media-blog
+    .flex-shrink-0
+        overflow: hidden
+        margin-bottom: 0
+        position: relative
+        flex: 0 0 160px
+        max-width: 160px
+        height: 120px
+    img
+        transition: all 0.4s ease
+        -moz-transition: all 0.4s ease
+        -webkit-transition: all 0.4s ease
+        -o-transition: all 0.4s ease
+        -ms-transition: all 0.4s ease
+        height: 100%
+        width: 100%
+        object-fit: cover
+
+    &:hover img
+        transform: scale(1.1)
+
+
+@media screen and (max-width: 1200px)
+    .media-blog .flex-shrink-0
+        height: 230px
+
+
+@media screen and (max-width: 767px)
+    .blogs 
+        margin-top: 60px !important 
+
+        .flex-shrink-0
+            margin-bottom: 1rem
+

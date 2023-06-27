@@ -1,0 +1,130 @@
+.hero
+    position: relative
+    &-bg
+        background: url('../images/hero1.jpg') no-repeat left top
+        background-size: cover
+        height: 684px
+        width: 100%
+
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: rgba(0,0,0,0.2)
+
+    .container
+        height: 100%
+        position: relative
+        z-index: 1
+
+    &-content
+        position: absolute
+        width: 50%
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+
+    &-content-inside
+        padding: 5rem 3rem
+
+    &-border-top
+        position: absolute
+        border-top: 8px solid rgba(2555, 255, 255, 0.6)
+        height: 50%
+        width: 100%
+
+        &::before
+            content: ''
+            border-left: 8px solid rgba(2555, 255, 255, 0.6)
+            position: absolute
+            left: 0
+            height: 50%
+            top: 0
+
+        &::after
+            content: ''
+            border-left: 8px solid rgba(2555, 255, 255, 0.6)
+            position: absolute
+            right: 0
+            height: 50%
+            top: 0
+
+    &-border-bottom
+        position: absolute
+        border-top: 8px solid rgba(2555, 255, 255, 0.6)
+        height: 50%
+        width: 100%
+
+        &::before
+            content: ''
+            border-left: 8px solid rgba(2555, 255, 255, 0.6)
+            position: absolute
+            left: 0
+            height: 50%
+            top: -50%
+
+        &::after
+            content: ''
+            border-left: 8px solid rgba(2555, 255, 255, 0.6)
+            position: absolute
+            right: 0
+            height: 50%
+            top: -50%
+
+    &-title
+        font-size: 90px
+        font-family: 'Anton', sans-serif
+        color: #fff
+        text-transform: uppercase
+        letter-spacing: 2px
+
+    &-sub-title
+        position: relative
+        display: inline-block
+        font-size: 24px
+        letter-spacing: 2px
+        text-transform: uppercase
+        font-family: 'Fjalla One', sans-serif
+        color: #fff
+
+        &::before
+            content: ''
+            position: absolute
+            left: 110%
+            width: 80px
+            height: 1px
+            top: 50%
+            transform: translateY(-50%)
+            background: #fff
+
+        &::after
+            content: ''
+            position: absolute
+            right: 110%
+            width: 80px
+            height: 1px
+            top: 50%
+            transform: translateY(-50%)s
+            background: #fff
+
+    &-btn
+        background: $gray-01
+        padding: 0.25rem 1rem
+        color: #fff
+        text-transform: uppercase
+        display: inline-block
+
+    &-arrow
+        height: 56px
+        width: 56px
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #fff
+        margin: 0 auto
+        cursor: pointer

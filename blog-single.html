@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/all.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="dist/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="dist/css/ninja-slider.css" />
+    <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="dist/css/animate.css" />
+    <link rel="stylesheet" href="dist/css/rome.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="dist/images/favicon-16x16.png"
+    />
+    <title>Seven Peak Travel & Tourism</title>
+  </head>
+
+  <body>
+    <div class="social-chat">
+      <div class="social-icon social-icon--facebook">
+        <img src="dist/images/facebook-chat.png" alt="" />
+      </div>
+      <div class="social-icon social-icon--whatsapp">
+        <a
+          href="https://api.whatsapp.com/send?phone=+971504407140&amp;text=WhatsApp Us"
+          target="_blank"
+        >
+          <img src="dist/images/whatsapp.png" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <div id="scrollTop"><i class="fas fa-chevron-up"></i></div>
+    <div class="bsnav-mobile-overlay"></div>
+
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 display-none col-sm-9 col-lg-5">
+              <div class="header__top-right d-flex align-items-center">
+                <div class="phone">
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+971 50 440 7140">
+                    +971 50 440 7140 / 028822424
+                  </a>
+                </div>
+                <div class="email">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:sevenpeakauh@gmail.com">
+                    sevenpeakauh@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-xl-7 d-flex justify-content-end">
+              <div class="price-language">
+                <select class="vodiapicker" name="" id="select-currency">
+                  <option
+                    value="usa"
+                    data-thumbnail="dist/images/usa-currency.png"
+                  >
+                    USD
+                  </option>
+                  <option
+                    value="au"
+                    data-thumbnail="dist/images/australian-dollar.jpg"
+                  >
+                    Australian Dollar
+                  </option>
+                  <option
+                    value="in"
+                    data-thumbnail="dist/images/indian-rupees.jpg"
+                  >
+                    Indian Rupee
+                  </option>
+                </select>
+                <div class="lang-select">
+                  <button class="btn-select" value=""></button>
+                  <div class="b">
+                    <ul id="a"></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="price-language">
+                <select class="vd" name="" id="select-currency">
+                  <option value="us" data-thumbnail="dist/images/usa-flag.jpg">
+                    United States
+                  </option>
+                  <option value="u" data-thumbnail="dist/images/japan-flag.jpg">
+                    Japanies
+                  </option>
+                  <option
+                    value="n"
+                    data-thumbnail="dist/images/indian-flag.jpg"
+                  >
+                    Indian
+                  </option>
+                </select>
+                <div class="lang-select">
+                  <button class="btn-select1" value=""></button>
+                  <div class="e">
+                    <ul id="c"></ul>
+                  </div>
+                </div>
+              </div>
+              <div class="social-media header__social-media d-flex">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+              </div>
+              <div class="login-register d-flex ms-3">
+                <button class="login-register-item btn btn--primary">
+                  <a href="login.html">Login</a>
+                </button>
+                <button class="login-register-item btn btn--accent">
+                  <a href="register.html">Register</a>
+                </button>
+                <div class="after-login-item ms-2 dropdown">
+                  <div
+                    class="d-flex align-items-center"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span class="login-name">
+                      <img src="dist/images/avatar-3.jpg" alt="" />
+                    </span>
+                    Hi Ramesh
+                  </div>
+
+                  <div class="dropdown-menu">
+                    <div class="dropdown-item">
+                      <h5 class="m-b-0 mt-2">Welcome</h5>
+                      <a href="">Ramesh Shrestha</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">
+                      <i data-feather="user" class="me-1"></i>
+                      My Profile
+                    </a>
+
+                    <a class="dropdown-item" href="#">
+                      <i data-feather="log-out" class="me-1"></i>
+                      Logout
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__middle">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-3 col-lg-2 col-7">
+              <a href="index.html" class="logo">
+                <img src="dist/images/logo.jpg" alt="" />
+              </a>
+            </div>
+            <div class="col-md-9 col-lg-10 col-5">
+              <div
+                class="header__middle-right d-flex justify-content-end align-items-center"
+              >
+                <nav class="menu desktop-menu">
+                  <nav
+                    class="navbar navbar-expand-lg navbar-dark bg-dark navdiv"
+                  >
+                    <ul class="navbar-nav nav-list">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                          Home
+                          <span class="sr-only">(current)</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About us</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="categories.html">
+                          Tours
+                          <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                          <li class="nav-item">
+                            <a href="detail.html">Abu Dhabi</a>
+                            <ul class="sub-menu">
+                              <li class="nav-item">
+                                <a href="detail.html">
+                                  Desert Safari Abu Dhabi
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a href="detail.html">Sightseeing Tours</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blogs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="destination-single.html">
+                          Other Destinations
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </nav>
+
+                <button class="navbar-toggler toggler-spring">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="menu mobile-menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navdiv">
+          <ul class="navbar-nav nav-list">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">
+                Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">
+                Tours
+                <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="sub-menu">
+                <li class="nav-item dropdown">
+                  <a href="#">
+                    Abu Dhabi
+                    <i class="fa-solid fa-caret-down"></i>
+                  </a>
+                  <ul class="sub-menu">
+                    <li class="nav-item">
+                      <a href="detail.html">Desert Safari Abu Dhabi</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="detail.html">Sightseeing Tours</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destination-single.html">
+                Other Destinations
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </nav>
+    </header>
+    <div class="bread">
+        <div class="container">
+            <div class="breadcrumb-outerr">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact us</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="body-wrapper p-t-40 p-b-60 wow fadeInDown" data-wow-duration="2s">
+        <div class="blog-single-page">
+            <div class="container">
+                <div class="blog-single">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="blog-post">
+                               
+                                <h2>Our signature lightweight flannels woven on vintage</h2>
+
+                                <div class="blog-post__img m-b-20 text-center">
+                                    <img src="dist/images/slider1.jpg" alt="">
+                                </div>
+
+                                <div class="blog-post__content">
+                                    <p>
+                                        There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have suffered alteration in some form, by injected humour, or randomised words
+                                        which
+                                        don't look even slightly believable. If you are going to use a passage of Lorem
+                                        Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                                        middle of
+                                        text. All the Lorem Ipsum generators on the Internet tend to repeat predefined
+                                        chunks as necessary, making this the first true generator on the Internet. It
+                                        uses a
+                                        dictionary of over 200 Latin words, combined with a handful of model sentence
+                                        structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem
+                                        Ipsum is therefore always free from repetition, injected humour, or
+                                        non-characteristic words etc.
+                                    </p>
+
+
+                                </div>
+                                <div class="blog-share m-t-30">
+                                    <h3>Share this</h3>
+                                    <div class="sharethis-inline-share-buttons"></div>
+                                  </div>
+                            </div>
+                            <div class="col-md-12 m-t-40" id="fbcomment">
+                                <div class="header_comment">
+                                    <div class="row">
+                                        <div class="col-md-6 text-left">
+                                          <span class="count_comment">264235 Comments</span>
+                                        </div>
+                                        <div class="col-md-6 text-right d-flex justify-content-end">
+                                          <span class="sort_title">Sort by</span>
+                                          <select class="sort_by">
+                                            <option>Top</option>
+                                            <option>Newest</option>
+                                            <option>Oldest</option>
+                                          </select>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="body_comment">
+                                    <div class="row">
+                                        <div class="avatar_comment col-md-1">
+                                          <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
+                                        </div>
+                                        <div class="box_comment col-md-11">
+                                          <textarea class="commentar" placeholder="Add a comment..."></textarea>
+                                          <div class="box_post d-flex justify-content-between">
+                                            <div class="left-content">
+                                              <input type="checkbox" id="post_fb"/>
+                                              <label for="post_fb">Also post on Facebook</label>
+                                            </div>
+                                            <div class="right-content">
+                                              <span>
+                                                <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar" />
+                                                <i class="fa fa-caret-down"></i>
+                                              </span>
+                                              <button onclick="submit_comment()" type="button" value="1">Post</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <ul id="list_comment" class="col-md-12">
+                                            <!-- Start List Comment 1 -->
+                                            <li class="box_result row">
+                                                <div class="avatar_comment col-md-1">
+                                                    <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
+                                                </div>
+                                                <div class="result_comment col-md-11">
+                                                    <h4>Nath Ryuzaki</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                                                    <div class="tools_comment">
+                                                        <a class="like" href="#">Like</a>
+                                                        <span aria-hidden="true"> · </span>
+                                                        <a class="replay" href="#">Reply</a>
+                                                        <span aria-hidden="true"> · </span>
+                                                        <i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> 
+                                                        <span aria-hidden="true"> · </span>
+                                                        <span>26m</span>
+                                                    </div>
+                                                    <ul class="child_replay">
+                                                        <li class="box_reply row">
+                                                            <div class="avatar_comment col-md-1">
+                                                                <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
+                                                            </div>
+                                                             <div class="result_comment col-md-11">
+                                                                <h4>Sugito</h4>
+                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                                                                <div class="tools_comment">
+                                                                    <a class="like" href="#">Like</a>
+                                                                    <span aria-hidden="true"> · </span>
+                                                                    <a class="replay" href="#">Reply</a>
+                                                                    <span aria-hidden="true"> · </span>
+                                                                    <i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> 
+                                                                    <span aria-hidden="true"> · </span>
+                                                                    <span>26m</span>
+                                                                </div>
+                                                                <ul class="child_replay"></ul>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            
+                                            <!-- Start List Comment 2 -->
+                                            <li class="box_result row">
+                                                <div class="avatar_comment col-md-1">
+                                                    <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
+                                                </div>
+                                                <div class="result_comment col-md-11">
+                                                    <h4>Gung Wah</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                                                    <div class="tools_comment">
+                                                        <a class="like" href="#">Like</a>
+                                                        <span aria-hidden="true"> · </span>
+                                                        <a class="replay" href="#">Reply</a>
+                                                        <span aria-hidden="true"> · </span>
+                                                        <i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> 
+                                                        <span aria-hidden="true"> · </span>
+                                                        <span>26m</span>
+                                                    </div>
+                                                    <ul class="child_replay"></ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    <button class="show_more" type="button">Load 42 more comments</button>
+                                    <button class="show_less" type="button" style="display:none"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="notices">
+                                <div class="title m-b-30">
+                                    <h2>Latest Blogs</h2>
+                                </div>
+                                <ul class="notices__list">
+                                    <li class="notices__item">
+                                        <a href="">
+                                            <div class="d-flex notices__media">
+                                                <div class="flex-shrink-0">
+                                                    <img class="mr-3" src="dist/images/chitwan-img.jpg" alt="">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h3 class="mt-0">Most of its text is made up from sections
+                                                    </h3>
+                                                    <p class="media-date">2021 - 07 - 01</p>
+                                                </div>
+                                            </div>
+
+                                        </a>
+
+                                    </li>
+                                    <li class="notices__item">
+                                        <a href="">
+                                            <div class="d-flex notices__media">
+                                                <div class="flex-shrink-0">
+                                                    <img class="mr-3" src="dist/images/pokhara-img.jpg" alt="">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h3 class="mt-0">Most of its text is made up from sections
+                                                    </h3>
+                                                    <p class="media-date">2021 - 07 - 01</p>
+                                                </div>
+                                            </div>
+
+                                        </a>
+                                    </li>
+                                    <li class="notices__item">
+                                        <a href="">
+                                            <div class="d-flex notices__media">
+                                                <div class="flex-shrink-0">
+                                                    <img class="mr-3" src="dist/images/lumbini.jpg" alt="">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h3 class="mt-0">Most of its text is made up from sections
+                                                    </h3>
+                                                    <p class="media-date">2021 - 07 - 01</p>
+                                                </div>
+                                            </div>
+
+                                        </a>
+
+                                    </li>
+                                    <li class="notices__item">
+                                        <a href="">
+                                            <div class="d-flex notices__media">
+                                                <div class="flex-shrink-0">
+                                                    <img class="mr-3" src="dist/images/manaslu.jpg" alt="">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h3 class="mt-0">Most of its text is made up from sections
+                                                    </h3>
+                                                    <p class="media-date">2021 - 07 - 01</p>
+                                                </div>
+                                            </div>
+
+                                        </a>
+
+                                    </li>
+                                    <li class="notices__item">
+                                        <a href="">
+                                            <div class="d-flex notices__media">
+                                                <div class="flex-shrink-0">
+                                                    <img class="mr-3" src="dist/images/muktinath.jpg" alt="">
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h3 class="mt-0">Most of its text is made up from sections
+                                                    </h3>
+                                                    <p class="media-date">2021 - 07 - 01</p>
+                                                </div>
+                                            </div>
+
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+  <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer__box">
+              <h2>Tours</h2>
+              <ul>
+                <li><a href="">Abu Dhabi</a></li>
+                <li><a href="">Desert Safari Abu Dhabi</a></li>
+                <li><a href="">Sightseeing Tours</a></li>
+                <li><a href="">Sea Adventure</a></li>
+                <li><a href="">Theme & Water Park</a></li>
+                <li><a href="">Sky Adventure</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer__box">
+              <h2>Destinations</h2>
+              <ul>
+                <li><a href="">Wadi Adventure</a></li>
+                <li><a href="">Al khatim desert</a></li>
+                <li><a href="">East Coast Tour</a></li>
+                <li><a href="">Abu Dhabi Pearl Journey</a></li>
+                <li><a href="">Ferrari World</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer__box">
+              <h2>Accomodation</h2>
+              <ul>
+                <li><a href="">Deals & Discounts</a></li>
+                <li><a href="">Desert Adventure</a></li>
+                <li><a href="">Dubai shopping tour</a></li>
+                <li><a href="">Dubai trip</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer__box">
+              <h2>Contact us</h2>
+              <div class="footer-contact-info">
+                <p class="location">
+                  <i data-feather="map-pin"></i>
+                  <span>
+                    Corniche residence Tower - Al Maghzoul St - Al Danah - Zone
+                    1 - Abu Dhabi
+                  </span>
+                </p>
+                <p class="phone">
+                  <i data-feather="phone"></i>
+                  <a href="tel:+971 50 440 7140">
+                    +971 50 440 7140 / 028822424
+                  </a>
+                </p>
+                <p class="email">
+                  <i data-feather="mail"></i>
+                  <a href="mailto:sevenpeakauh@gmail.com">
+                    sevenpeakauh@gmail.com
+                  </a>
+                </p>
+                <p class="web">
+                  <i data-feather="globe"></i>
+                  <a href="mailto:Info@7peakuae.com">Info@7peakuae.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center partner-outer">
+          <div class="col-md-4">
+            <h2>Our Partners</h2>
+            <div class="partners">
+              <img src="dist/images/viator_logo.png" alt="" width="110px" />
+              <img
+                src="dist/images/logo-partner-bookmundi.png"
+                alt=""
+                width="160px"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer__box">
+              <h2>We Accept</h2>
+              <img
+                src="dist/images/accept.png"
+                alt=""
+                class="accept-img"
+                width="185px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="last_footer">
+        <div class="container">
+          <div class="d-flex justify-content-between flex-wrap">
+            <div class="copy">
+              &copy Seven Peak Travel & Tourism 2023.
+            </div>
+            <div class="design">
+              Site Designed and Developed By
+              <a href="https://www.pioneersoftech.com">pioneersoftech.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="dist/js/jquery-3.5.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/owl.carousel.js"></script>
+
+    <script src="dist/js/jquery.fancybox.min.js"></script>
+    <script src="dist/js/wow.js"></script>
+    <script
+      type="text/javascript"
+      src="https://platform-api.sharethis.com/js/sharethis.js#property=64327d41b3f3190019fac405&product=inline-share-buttons&source=platform"
+      async="async"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="dist/js/form-validation.js"></script>
+    <script src="dist/js/captcha.js"></script>
+    <script src="dist/js/rome.js"></script>
+    <script src="dist/js/main.js"></script>
+  </body>
+</html>

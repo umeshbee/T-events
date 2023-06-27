@@ -1,0 +1,39 @@
+/* Visit http://www.menucool.com/responsive-slider for instructions */
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1, 1);
+    }
+
+    to {
+        -webkit-transform: scale(1.5, 1.5);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+#carouselExampleFade .carousel-item img {
+    -webkit-animation: zoom 20s;
+    animation: zoom 20s;
+}
+
+.carousel-caption {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 64px;
+    font-size: clamp(1.625rem, -0.5673rem + 4.5673vw, 4rem);
+    line-height: 1.2;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    z-index: 100;
+}

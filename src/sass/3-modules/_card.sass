@@ -1,0 +1,126 @@
+.card
+    position: relative
+    overflow: hidden
+
+    
+    img
+        height: 220px
+        object-fit: cover
+    a
+        position: relative
+        display: block
+    h2
+        font-size: 2rem
+
+    &--border-none
+        border: none
+
+    .card-body
+        padding: 1rem
+        font-size: 0.9375rem
+
+        &--position
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            padding: 2rem
+            background: rgb(255,255,255)
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(25,89,149,1) 50%, rgba(56,44,96,1) 100%)
+
+        &--position  h2, &--position  h2 p
+            color: #fff
+
+.card--no-padding
+    padding: 0
+
+.card__date
+    color: #7e7f8b
+
+.news__owl-carousel .owl-item img
+    width: 130px
+
+.c-card
+    &__body
+        background: #fff
+        padding: 15px 20px
+
+.notices__media h3
+    font-size: 18px
+    margin-bottom: 0
+
+.notices__media img
+    width: 100px
+    height: 80px
+    object-fit: cover
+
+.media-date
+    color: #7e7f8b
+
+.card-price
+    position: absolute
+    right: 0
+    bottom: 0
+    background: rgba(253,21,40,0.5)
+    padding: 1.25rem
+    color: #fff
+    clip-path: polygon(0 38%, 100% 0, 100% 100%, 0% 100%)
+    font-size: 1.5rem
+    font-weight: bold
+
+    span
+        display: block
+        font-size: 0.875rem
+        text-transform: uppercase
+        margin-top: 26px
+        font-weight: normal
+
+.cards .card
+    margin-bottom: 30px
+
+.card
+    figure
+        overflow: hidden
+        margin-bottom: 0
+        position: relative
+    img
+        transition: all 0.4s ease
+        -moz-transition: all 0.4s ease
+        -webkit-transition: all 0.4s ease
+        -o-transition: all 0.4s ease
+        -ms-transition: all 0.4s ease
+
+    &:hover img
+        transform: scale(1.1)
+
+.card-flex
+    i
+        color: $accent
+
+.price
+    position: absolute
+    right: 20px
+    bottom: 20px
+    background: #fff
+    display: flex
+    padding: 0.5rem
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    height: 75px
+    width: 75px
+    border-radius: 100%
+    line-height: 1
+    opacity: 0.8
+
+    span
+        font-size: 12px
+        font-style: italic
+
+    strong
+        font-size: 24px
+        color: $accent
+
+.card-title
+    text-transform: inherit
