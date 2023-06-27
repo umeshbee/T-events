@@ -667,14 +667,14 @@ input:focus::placeholder {
   -moz-border-radius: 100%;
   height: 50px;
   width: 50px;
-  background: #141116;
+  background: #0e0e0e;
   text-align: center;
   line-height: 50px;
   color: #fff;
   position: fixed;
   z-index: 1000;
   right: 20px;
-  bottom: 190px;
+  bottom: 80px;
   cursor: pointer;
 }
 
@@ -2128,34 +2128,40 @@ input[type=submit] {
   position: relative;
 }
 
-.copyright {
-  clear: both;
-  float: left;
-}
-
-.design a {
-  color: #F66C39;
+.copy a {
+  color: #999999;
   text-decoration: none;
 }
-.design a:hover {
+.copy a:hover {
   text-decoration: underline;
+  color: #F66C39;
 }
 
 .footer__social-media {
   font-size: 1rem;
+  display: inline-flex;
+  gap: 12px;
 }
 .footer__social-media a {
   color: #333;
-  margin-right: 5px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   color: #fff;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  height: 32px;
-  width: 32px;
-  background: #F66C39;
+}
+
+.contact-list li {
+  margin-bottom: 4px;
+  position: relative;
+  padding-left: 1rem;
+}
+.contact-list li::after {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 4px;
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px) {

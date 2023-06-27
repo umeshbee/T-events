@@ -19,7 +19,7 @@
 
 	h3, h4
 		color: #fff
-	
+
 	h4
 		font-size: 16px
 		font-weight: normal
@@ -61,32 +61,41 @@
 	background: $gray-04
 	position: relative
 
-.copyright
-	clear: both
-	float: left
+.copy
 
-.design
 	a
-		color: $accent
+		color: $body-text-1
 		text-decoration: none
 
 		&:hover
 			text-decoration: underline
+			color: $accent
 
 .footer__social-media
 	font-size: 1rem
+	display: inline-flex
+	gap: 12px
+
 	a
 		color: #333
-		margin-right: 5px
 		border-radius: 100%
 		-webkit-border-radius: 100%
 		color: #fff
-		display: inline-flex
-		justify-content: center
-		align-items: center
-		height: 32px
-		width: 32px
-		background: $accent
+
+.contact-list
+	li
+		margin-bottom: 4px
+		position: relative
+		padding-left: 1rem
+
+		&::after
+			content: '\f111'
+			font-family: 'Font Awesome 5 Free'
+			font-weight: 600
+			position: absolute
+			left: 0
+			top: 0
+			font-size: 4px
 
 @media screen and (min-width: 577px) and (max-width: 767px)
 	.footer .col-lg-3.col-sm-6
