@@ -7,14 +7,17 @@
 
 .grid-item
     background: #fff
-    
+
 .grid
     display: grid
     grid-gap: 30px
 
-@media (min-width:767px)
+.no-gap
+    grid-gap: 0
 
-    .grid 
+@media (min-width:768px)
+
+    .grid
 
         &--12
             grid-template-columns: repeat(12, 1fr)
@@ -22,15 +25,24 @@
             grid-template-columns: repeat(2, 1fr)
 
         &--3
-            grid-template-columns: repeat(3, 1fr) 
+            grid-template-columns: repeat(3, 1fr)
 
         &--4
             grid-template-columns: repeat(4, 1fr)
 
+        &--5
+            grid-template-columns: repeat(5, 1fr)
+
+@media (max-width:767px)
+
+    .grid
+
+        &--5
+            grid-template-columns: repeat(3, 1fr)
+
+            .grid-item:last-child
+                display: none
 
 @media screen and (min-width: 768px) and (max-width: 992px)
-    .grid--3 
+    .grid--3
         grid-template-columns: repeat(2, 1fr)
-
-    
-

@@ -587,7 +587,11 @@ input:focus::placeholder {
   grid-gap: 30px;
 }
 
-@media (min-width: 767px) {
+.no-gap {
+  grid-gap: 0;
+}
+
+@media (min-width: 768px) {
   .grid--12 {
     grid-template-columns: repeat(12, 1fr);
   }
@@ -599,6 +603,17 @@ input:focus::placeholder {
   }
   .grid--4 {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .grid--5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .grid--5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid--5 .grid-item:last-child {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -1713,6 +1728,15 @@ input:focus::placeholder {
   background: linear-gradient(90deg, #1F3C7E 0%, #02A5E8 100%);
 }
 
+.cta-content {
+  gap: 40px;
+}
+
+.cta-left {
+  flex: 1;
+  font-size: 24px;
+}
+
 .form-control,
 .form-control input {
   border-radius: 0;
@@ -1909,6 +1933,12 @@ input[type=submit] {
     left: 0;
   }
 }
+.gallery-section img {
+  height: 215px;
+  object-fit: cover;
+  width: 100%;
+}
+
 .inside-banner {
   background: rgb(255, 255, 255);
   background: linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgb(5, 118, 182) 0%, rgb(56, 44, 96) 100%);
@@ -2034,29 +2064,37 @@ input[type=submit] {
   font-size: 15px;
   position: relative;
   padding: 3rem 0 0;
-  background: #1367A5;
+  background: #131313;
+  color: #999999;
 }
 .footer h2 {
-  font-size: 1.125rem;
-  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  margin-bottom: 1.875rem;
   position: relative;
   text-transform: uppercase;
   font-weight: 500;
   color: #fff;
   letter-spacing: 0;
 }
-.footer p {
+.footer h3, .footer h4 {
   color: #fff;
+}
+.footer h4 {
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+.footer p {
+  color: #999999;
 }
 .footer .footer-contact-info a,
 .footer .footer-contact-info span {
-  color: #fff;
+  color: #999999;
 }
-.footer .footer-contact-info p {
-  display: flex;
-}
-.footer .footer-contact-info p svg {
-  flex: 0 0 24px;
+
+.footer__box-menu ul {
+  column-count: 2;
+  gap: 20px;
 }
 
 .footer ul li a:hover {
@@ -2074,95 +2112,33 @@ input[type=submit] {
 .footer__box li {
   line-height: 26px;
   position: relative;
-  padding-left: 20px;
-}
-.footer__box li::after {
-  content: "\f105";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-family: "FontAwesome";
-  font-size: 9px;
-  color: #fff;
 }
 .footer__box li a {
-  display: block;
-  color: #fff;
-}
-.footer__box li a:hover {
-  text-decoration: underline;
+  color: #999999;
 }
 
 .footer__box li {
   margin-bottom: 8px;
 }
 
-.footer__box li a:hover {
-  padding-left: 5px;
-}
-
 .last_footer {
   padding: 1rem 0;
-  font-size: 0.8125rem;
   margin-top: 30px;
-  background: #121d26;
+  background: #303030;
   position: relative;
-  color: #fff;
-}
-.last_footer::after {
-  content: "";
-  position: absolute;
-  top: -122px;
-  right: 100px;
-  background: url("../images/footer-bg.png") no-repeat center top;
-  height: 123px;
-  width: 450px;
-}
-.last_footer p {
-  color: #5e7b8f;
 }
 
 .copyright {
   clear: both;
-  font-size: 14px;
   float: left;
 }
 
 .design a {
   color: #F66C39;
   text-decoration: none;
+}
+.design a:hover {
   text-decoration: underline;
-}
-.footer__box-pl {
-  padding-left: 40px;
-}
-
-.contact-info p svg {
-  vertical-align: top;
-}
-
-.contact-info p {
-  position: relative;
-}
-
-.contact-info a, .contact-info span {
-  padding-left: 1rem;
-  display: inline-block;
-  color: inherit;
-}
-
-.contact-info-t p svg {
-  color: #F66C39;
-}
-
-.partners {
-  display: flex;
-  flex-wrap: wrap;
-}
-.partners img {
-  margin-right: 1rem;
-  height: 50px;
-  object-fit: contain;
 }
 
 .footer__social-media {
@@ -2180,10 +2156,6 @@ input[type=submit] {
   height: 32px;
   width: 32px;
   background: #F66C39;
-}
-
-.partner-outer {
-  margin-top: 40px;
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px) {
@@ -2783,7 +2755,7 @@ s.pagination .page-item .page-link.pren {
   vertical-align: top;
 }
 
-.footer-contact-info a, .footer-contact-info span {
+.contact-page .footer-contact-info a, .contact-page .footer-contact-info span {
   padding-left: 1rem;
   display: inline-block;
 }
